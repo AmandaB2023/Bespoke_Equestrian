@@ -4,7 +4,7 @@ html {
 
 body {
     background: url('/media/hero2.webp') no-repeat center center/cover;
-    background-size: fill;
+    background-size: cover;
     height: calc(100vh - 164px);
     color: #555;
     font-family: 'Playfair Display', 'Lato';
