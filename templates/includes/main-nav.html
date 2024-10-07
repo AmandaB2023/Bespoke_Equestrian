@@ -6,35 +6,36 @@
                 All Products
             </a>
             <div class="dropdown-menu border-0" aria-labelledby="all-products-link">
-                <a href="" class="dropdown-item">By Price</a>
-                <a href="" class="dropdown-item ">By Rating</a>
-                <a href="" class="dropdown-item ">By Category</a>
+                <a href="{% url 'products' %}?sort=price&direction=asc" class="dropdown-item">By Price</a>
+                <a href="{% url 'products' %}?sort=rating&direction=desc" class="dropdown-item ">By Rating</a>
+                <a href="{% url 'products' %}?sort=category&direction=asc" class="dropdown-item ">By Category</a>
                 <a href="{% url 'products' %}" class="dropdown-item">All Products</a>
             </div>
         </li>
 
         <li class="nav-item dropdown">
-            <a class="logo-font font-weight-bold nav-link text-black mr-5" href="#" id="clothing-link"
+            <a class="logo-font font-weight-bold nav-link text-black mr-5" href="#" id="horsewear-link"
                 data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                 Horsewear
             </a>
-            <div class="dropdown-menu border-0" aria-labelledby="clothing-link">
-                <a href="" class="dropdown-item">Saddle Pads</a>
-                <a href="" class="dropdown-item">Stable Apparel</a>
-                <a href="" class="dropdown-item">Rugs</a>
-                <a href="" class="dropdown-item">All Clothing</a>
+            <div class="dropdown-menu border-0" aria-labelledby="horsewear-link">
+                <a href="{% url 'products' %}?category=saddle_pads" class="dropdown-item">Saddle Pads</a>
+                <a href="{% url 'products' %}?category=stable apparel" class="dropdown-item">Stable Apparel</a>
+                <a href="{% url 'products' %}?category=rugs" class="dropdown-item">Rugs</a>
+                <a href="{% url 'products' %}?category=stable_apparel, saddle_pads, rugs" class="dropdown-item">All
+                    Clothing</a>
             </div>
         </li>
 
         <li class="nav-item dropdown">
-            <a class="logo-font font-weight-bold nav-link text-black mr-5" href="#" id="homeware-link"
+            <a class="logo-font font-weight-bold nav-link text-black mr-5" href="#" id="riderwear-link"
                 data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                 Riding Wear
             </a>
-            <div class="dropdown-menu border-0" aria-labelledby="homeware-link">
-                <a href="" class="dropdown-item">Jackets</a>
-                <a href="" class="dropdown-item">Helemts</a>
-                <a href="" class="dropdown-item">All Riding Wear</a>
+            <div class="dropdown-menu border-0" aria-labelledby="riderwear-link">
+                <a href="{% url 'products' %}?category=jackets" class="dropdown-item">Jackets</a>
+                <a href="{% url 'products' %}?category=helmets" class="dropdown-item">Helmets</a>
+                <a href="{% url 'products' %}?category=jackets, helmets" class="dropdown-item">All Riding Wear</a>
             </div>
         </li>
 
