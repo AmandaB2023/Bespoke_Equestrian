@@ -5,6 +5,7 @@ html {
 body {
     background: url('/media/hero2.webp') no-repeat center center/cover;
     height: calc(100vh - 164px);
+    background-size: cover;
     color: #555;
     font-family: 'Lato';
 }
@@ -50,7 +51,7 @@ body {
 .btn-outline-black:hover,
 .btn-outline-black:active,
 .btn-outline-black:focus {
-    background: #757879;
+    background: black;
     color: white !important;
 }
 
@@ -110,6 +111,7 @@ a.category-badge>span.badge:hover {
 }
 
 /* ------------------------------- bootstrap toasts */
+
 .message-container {
     position: fixed;
     top: 72px;
@@ -175,6 +177,7 @@ a.category-badge>span.badge:hover {
     overflow-x: hidden;
     overflow-y: auto;
 }
+
 
 /* -------------------------------- Media Queries */
 
