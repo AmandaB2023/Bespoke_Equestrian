@@ -19,7 +19,7 @@
     <div class="row">
         <div class="col">
             <hr>
-            <h2 class="logo-font mb-4">Thank You</h2>
+            <h2 class="logo-font mb-4">Thank You for your Order </h2>
             <hr>
             <p class="text-black">Your order information is below. A confirmation email will be sent to
                 <strong>{{ order.email }}</strong>.</p>
@@ -68,7 +68,7 @@
                         </p>
                     </div>
                     <div class="col-12 col-md-8 text-md-right">
-                        <p class="small mb-0">{{ item.quantity }} @ ${{ item.product.price }} each</p>
+                        <p class="small mb-0">{{ item.quantity }} @ €{{ item.product.price }} each</p>
                     </div>
                 </div>
                 {% endfor %}
@@ -168,7 +168,7 @@
                         <p class="mb-0 text-black font-weight-bold">Order Total</p>
                     </div>
                     <div class="col-12 col-md-8 text-md-right">
-                        <p class="mb-0">{{ order.order_total }}</p>
+                        <p class="mb-0">€{{ order.order_total }}</p>
                     </div>
                 </div>
 
@@ -177,7 +177,7 @@
                         <p class="mb-0 text-black font-weight-bold">Delivery</p>
                     </div>
                     <div class="col-12 col-md-8 text-md-right">
-                        <p class="mb-0">{{ order.delivery_cost }}</p>
+                        <p class="mb-0">€{{ order.delivery_cost }}</p>
                     </div>
                 </div>
 
@@ -186,7 +186,7 @@
                         <p class="mb-0 text-black font-weight-bold">Grand Total</p>
                     </div>
                     <div class="col-12 col-md-8 text-md-right">
-                        <p class="mb-0">{{ order.grand_total }}</p>
+                        <p class="mb-0">€{{ order.grand_total }}</p>
                     </div>
                 </div>
             </div>
@@ -194,11 +194,11 @@
     </div>
     <div class="row">
         <div class="col-12 col-lg-7 text-right">
-            <a href="{% url 'products' %}?category=new_arrivals,deals,clearance" class="btn btn-black rounded-0 my-2">
+            <a href="{% url 'products' %}" class="btn btn-black rounded-0 my-2">
                 <span class="icon mr-2">
-                    <i class="fas fa-gifts"></i>
+                    <i class="fa-solid fa-bag-shopping"></i>
                 </span>
-                <span class="text-uppercase">Now check out the latest deals!</span>
+                <span class="text-uppercase">Continue Shopping!</span>
             </a>
         </div>
     </div>
