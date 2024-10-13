@@ -16,3 +16,14 @@ class ProductForm(forms.ModelForm):
         self.fields['category'].choices = friendly_names
         for field_name, field in self.fields.items():
             field.widget.attrs['class'] = 'border-black rounded-0'
+
+
+    def add_product(request):
+        """ Add a product to the store """
+        form = ProductForm()
+        template = 'products/add_product.html'
+        context = {
+            'form': form,
+        }
+
+        return render(request, template, context)
