@@ -1,5 +1,6 @@
 
 import os
+import dj_database_url
 from pathlib import Path
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
@@ -33,6 +34,7 @@ INSTALLED_APPS = [
     'allauth.socialaccount',
     'bag',
     'checkout',
+    
     'home',
     'products',
     'profiles',
@@ -119,7 +121,6 @@ DATABASES = {
         'NAME': BASE_DIR / 'db.sqlite3',
     }
 }
-
 
 CSRF_TRUSTED_ORIGINS = [
     "https://*.gitpod.io",
