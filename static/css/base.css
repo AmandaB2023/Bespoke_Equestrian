@@ -4,10 +4,27 @@ html {
 
 body {
     background: url('/media/hero2.webp') no-repeat center center/cover;
-    height: calc(100vh - 164px);
     background-size: cover;
+    height: calc(100vh - 164px);
     color: #555;
     font-family: 'Lato';
+    display: flex;
+    flex-wrap: wrap;
+}
+
+
+footer {
+    background-color: #4D6A6D;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+#mc_embed_signup {
+    background: #4D6A6D;
+    clear: left;
+    color: white;
+    font: 14px Helvetica, Arial, sans-serif;
+    width: 600px;
 }
 
 /* from Bulma - when using fontawsome icons will stay centered and have a consistent size*/
@@ -312,6 +329,7 @@ a.category-badge>span.badge:hover {
 
     body {
         height: calc(100vh - 116px);
+
     }
 }
 
