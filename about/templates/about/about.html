@@ -1,13 +1,31 @@
-{% extends "base.html" %}
+{% extends 'base.html' %}
 {% load static %}
 
 {% block content %}
-<div class="overlay back-ground-white-color"></div>
-<header class="ext-white text-center py-5 push-content-down">
-    <h2 class="text-center">About Us</h2>
-</header>
-<section class="container my-5">
-    <section class="mb-5">
-        <h2 class="text-center">Our Story</h2>
 
-        {% endblock %}
+<div class="overlay">
+    <div class="container mt-5">
+        <div class="row">
+            <div class=" col-md-8 col-md-10 mx-auto">
+            </div>
+            <div class="col-8">
+                <!-- Title goes between these h2 tags -->
+                <h2>{{ about.title }}</h2>
+                {% if "placeholder" in about.profile_image.url %}
+                <img src="{% static 'media/hero1.webp' %}" width="75%" alt="placeholder image">
+                {% else %}
+                <img src="{{ about.profile_image.url }}" width="75%" alt="{{ about.title }}">
+                {% endif %}
+                <!-- Content goes directly underneath this -->
+                {{ about.content | safe }}
+            </div>
+        </div>
+        <div class="row">
+            <div class="col text-right">
+                <!-- Updated on field goes in here -->
+
+                <p class="text-end"><em>Updated on: {{ about.updated_on }}</em></p>
+            </div>
+        </div>
+    </div>
+    {% endblock content %}

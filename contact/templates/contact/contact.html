@@ -1,0 +1,23 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+{% load crispy_forms_tags %}
+
+<div class="container">
+    <div class="row">
+        <div class="col-md-8 mt-3 offset-md-2">
+            <h2>Contact Us</h2>
+        </div>
+
+        <div class="row">
+            <div class="col-md-8 mt-3 offset-md-2">
+                <form method="post" style="margin-top: 1.3em;">
+                    {{ contact | crispy }}
+                    {% csrf_token %}
+                    {{ form.as_p }}
+                    <button type="submit" class="btn btn-primary">Submit</button>
+                </form>
+            </div>
+        </div>
+    </div>
+    {% endblock %}

@@ -1,11 +1,16 @@
 asgiref==3.8.1
+cloudinary==1.36.0
 dj-database-url==0.5.0
+dj3-cloudinary-storage==0.0.6
 Django==5.1.1
 django-allauth==65.0.2
 django-countries==7.6.1
 django-crispy-forms==1.14.0
+django-summernote==0.8.20.0
 pillow==10.4.0
 psycopg2==2.9.9
 pytz==2024.2
 sqlparse==0.5.1
 stripe==11.1.0
+urllib3==1.26.20
+whitenoise==5.3.0

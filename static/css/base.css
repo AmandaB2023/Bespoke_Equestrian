@@ -3,25 +3,87 @@ html {
 }
 
 body {
-    background: url('/media/hero2.webp') no-repeat center center/cover;
     background-size: cover;
     height: calc(100vh - 164px);
     color: #555;
     font-family: 'Lato';
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+main {
+    background-color: #ffffff;
+    /* Enlarged main element to push footer down*/
+    flex: 1 0 auto;
+}
+
+/* Hero section */
+
+#hero {
+    height: 600px;
+    width: 100%;
+    /*Image centered horizontally and vertically*/
+    background: url('/media/hero2.webp')no-repeat center center/cover;
+    position: relative;
 }
 
 
 footer {
     background-color: #4D6A6D;
+    display: flex;
+    flex-wrap: wrap;
 }
 
+/*Footer Social Media Icons*/
+/*Targets Social media icons*/
+#social-networks {
+    text-align: center;
+    padding: 20px 0;
+    display: flex;
+    justify-content: space-evenly;
+    /*Displays icons in a line*/
+    list-style-type: none;
+}
+
+#social-networks i {
+    font-size: 180%;
+    color: #ffffff;
+    border-radius: 24px;
+    padding: 5px;
+    box-shadow: 0px 3px 4px rgba(239, 239, 240, 0.8);
+}
+
+.facebook:hover {
+    background-color: #4267B2;
+    border-radius: 22px;
+    transform: translateY(-20px);
+}
+
+.twitter:hover {
+    background-color: #1DA1F2;
+    border-radius: 22px;
+    transform: translateY(-20px);
+}
+
+.youtube:hover {
+    background-color: #FF0000;
+    border-radius: 22px;
+    transform: translateY(-20px);
+}
+
+.instagram:hover {
+    background-color: #E1306C;
+    border-radius: 22px;
+    transform: translateY(-20px);
+}
 
 #mc_embed_signup {
     background: #4D6A6D;
     clear: left;
     color: white;
-    font: 14px Helvetica, Arial, sans-serif;
-    width: 600px;
+    font: 14px lato;
+    width: 400px;
 }
 
 /* from Bulma - when using fontawsome icons will stay centered and have a consistent size*/
@@ -52,10 +114,6 @@ footer {
 .btn-black {
     background: #4D6A6D;
     color: white;
-}
-
-.bg-dark {
-    background: #4D6A6D
 }
 
 .btn-outline-black {
