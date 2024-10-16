@@ -32,6 +32,7 @@ INSTALLED_APPS = [
     'allauth',
     'allauth.account',
     'allauth.socialaccount',
+    'about',
     'bag',
     'checkout',
     
@@ -121,6 +122,10 @@ DATABASES = {
         'NAME': BASE_DIR / 'db.sqlite3',
     }
 }
+
+# DATABASES = {
+#     'default': dj_database_url.parse('postgres://u5pzxoeod82:Gt08vhUp3Id1@ep-gentle-mountain-a23bxz6h-pooler.eu-central-1.aws.neon.tech/marry_crook_lens_381518')
+# }
 
 CSRF_TRUSTED_ORIGINS = [
     "https://*.gitpod.io",

@@ -157,9 +157,8 @@
   {% endblock %}
 
   <!--Main-->
-  <main>
+  <main class="d-flex ">
     <h1>main</h1>
-
   </main>
   {% block content %}
   {% endblock %}
@@ -171,15 +170,15 @@
   {% endblock %}
 
   <!--Footer-->
-  <footer class=col-12 col-lg-4 my-auto py-1 py-lg-0>
-    <div>
+  <footer class="d-flex justify-content-between">
+    <div class="d-inline p-2  bg-dark text-white">
+      <h3>div 1</h3>
+    </div>
+    <div class="d-inline p-2  bg-dark text-white">
       <h3>div 1</h3>
     </div>
     <div>
-      <h3>div 1</h3>
-    </div>
-    <div>
-      <div id="mc_embed_shell">
+      <div class="d-inline p-2  bg-dark text-white" id="mc_embed_shell">
         <div id="mc_embed_signup">
           <form
             action="https://ymail.us10.list-manage.com/subscribe/post?u=00dbe12bb8182214e556f6418&amp;id=7cb1717f85&amp;f_id=00e942e5f0"
