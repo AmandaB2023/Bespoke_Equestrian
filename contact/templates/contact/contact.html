@@ -1,22 +1,31 @@
 {% extends 'base.html' %}
 {% load static %}
-{% block content %}
 {% load crispy_forms_tags %}
 
-<div class="container">
+{% block page_header %}
+<div class="container header-container">
     <div class="row">
-        <div class="col-md-8 mt-3 offset-md-2">
+        <div class="col"></div>
+    </div>
+</div>
+{% endblock %}
+
+{% block content %}
+<div class="container grid text-center" id="contact">
+    <div class="row">
+        <div class=" col-md-8 col-md-10 mx-auto">
             <h2>Contact Us</h2>
         </div>
 
         <div class="row">
-            <div class="col-md-8 mt-3 offset-md-2">
+            <div class=" col-md-8 col-md-10 mx-auto">
                 <form method="post" style="margin-top: 1.3em;">
-                    {{ contact | crispy }}
-                    {% csrf_token %}
-                    {{ form.as_p }}
-                    <button type="submit" class="btn btn-primary">Submit</button>
-                </form>
+                    <form class="row g-3  col-md-6">
+                        {{ contact | crispy }}
+                        {% csrf_token %}
+                        {{ form.as_p }}
+                        <button type="submit" class="btn btn-primary">Submit</button>
+                    </form>
             </div>
         </div>
     </div>

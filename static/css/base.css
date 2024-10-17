@@ -3,29 +3,19 @@ html {
 }
 
 body {
+    background: url('/media/hero2.webp') no-repeat center center fixed;
     background-size: cover;
-    height: calc(100vh - 164px);
     color: #555;
     font-family: 'Lato';
-    min-height: 100vh;
-    display: flex;
-    flex-direction: column;
+
 }
 
 main {
-    background-color: #ffffff;
+
+    background-color: transparent;
     /* Enlarged main element to push footer down*/
     flex: 1 0 auto;
-}
-
-/* Hero section */
-
-#hero {
-    height: 600px;
-    width: 100%;
-    /*Image centered horizontally and vertically*/
-    background: url('/media/hero2.webp')no-repeat center center/cover;
-    position: relative;
+    min-height: 100vh;
 }
 
 
@@ -33,6 +23,21 @@ footer {
     background-color: #4D6A6D;
     display: flex;
     flex-wrap: wrap;
+}
+
+/*Contact form text and backround color*/
+#about,
+#contact {
+    color: #ffffff;
+    background-color: rgba(77, 106, 109, 0.9);
+    padding: 25px;
+}
+
+#contact {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-height: fit-content;
 }
 
 /*Footer Social Media Icons*/
@@ -386,9 +391,12 @@ a.category-badge>span.badge:hover {
     }
 
     body {
-        height: calc(100vh - 116px);
 
+        background: url('/media/Hero_Mob_1-min.webp')no repeat;
+        max-width: 100%;
+        height: auto;
     }
+
 }
 
 .display-4.logo-font.text-black {
