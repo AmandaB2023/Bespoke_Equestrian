@@ -17,9 +17,9 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = 'django-insecure-6vn7quw_&c19=6xy3lw2vw6n&qqf5w$+atul-34_#lg^0r!y)%'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
-ALLOWED_HOSTS = ['8000-amandab2023-bespokeeque-m5s0s1j7ize.ws-eu116.gitpod.io']
+ALLOWED_HOSTS = ['8000-amandab2023-bespokeeque-m5s0s1j7ize.ws-eu116.gitpod.io','.herokuapp.com']
 
 
 # Application definition
@@ -124,8 +124,12 @@ WSGI_APPLICATION = 'bespoke_equestrian.wsgi.application'
 
 # Database
 # https://docs.djangoproject.com/en/3.2/ref/settings/#databases
-
-DATABASES = {
+if 'DATABASE_URL' in os.environ:
+    DATABASES = {
+    'default': dj_database_url.parse(os.environ.get('DATABASE_URL'))
+}
+else:
+    DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.sqlite3',
         'NAME': BASE_DIR / 'db.sqlite3',
