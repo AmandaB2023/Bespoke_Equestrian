@@ -1,6 +1,7 @@
 
 import os
 import dj_database_url
+import cloudinary
 from pathlib import Path
 if os.path.isfile('env.py'):
     import env
@@ -41,6 +42,7 @@ INSTALLED_APPS = [
     'bag',
     'checkout',
     'contact',
+    'coupons',
     'home',
     'products',
     'profiles',
@@ -58,6 +60,7 @@ MIDDLEWARE = [
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
     'allauth.account.middleware.AccountMiddleware',
+    'whitenoise.middleware.WhiteNoiseMiddleware',
 ]
 
 ROOT_URLCONF = 'bespoke_equestrian.urls'
@@ -130,7 +133,7 @@ DATABASES = {
 }
 
 # DATABASES = {
-#     'default': dj_database_url.parse('postgres://u5pzxoeod82:Gt08vhUp3Id1@ep-gentle-mountain-a23bxz6h-pooler.eu-central-1.aws.neon.tech/marry_crook_lens_381518')
+#     'default': dj_database_url.parse('')
 # }
 
 CSRF_TRUSTED_ORIGINS = [

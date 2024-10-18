@@ -2,6 +2,7 @@ from decimal import Decimal
 from django.conf import settings
 from django.shortcuts import get_object_or_404
 from products.models import Product
+from coupons.models import Coupon
 
 def bag_contents(request):
 
@@ -9,6 +10,11 @@ def bag_contents(request):
     total = 0
     product_count = 0
     bag = request.session.get('bag', {})
+    coupon_id = request.session.get('coupon_id')
+
+    coupon = None
+    discount = 0
+    savings = 0
 
     for item_id, item_data in bag.items():
         if isinstance(item_data, int):
@@ -20,6 +26,7 @@ def bag_contents(request):
                 'quantity': item_data,
                 'product': product,
             })
+
         else:
             product = get_object_or_404(Product, pk=item_id)
             for size, quantity in item_data['items_by_size'].items():
@@ -31,6 +38,24 @@ def bag_contents(request):
                     'product': product,
                     'size': size,
                 })
+
+        if coupon_id:
+            try:
+                coupon = Coupon.objects.get(id=coupon_id)
+                if coupon.is_valid():
+                    if coupon.discount_type == 'percentage':
+                        discount = (
+                            coupon.discount_value / Decimal(100)) * subtotal
+                elif coupon.discount_type == 'amount':
+                    discount = coupon.discount_value
+                    savings = min(discount, subtotal)
+                else:
+                    request.session['coupon_id'] = None
+            except Coupon.DoesNotExist:
+                request.session['coupon_id'] = None
+
+    grand_total = total - savings
+
 
     if total < settings.FREE_DELIVERY_THRESHOLD:
         delivery = total * Decimal(settings.STANDARD_DELIVERY_PERCENTAGE / 100)
@@ -49,6 +74,8 @@ def bag_contents(request):
         'free_delivery_delta': free_delivery_delta,
         'free_delivery_threshold': settings.FREE_DELIVERY_THRESHOLD,
         'grand_total': grand_total,
+        'coupon': coupon,
+        'savings': savings,
     }
 
     return context
