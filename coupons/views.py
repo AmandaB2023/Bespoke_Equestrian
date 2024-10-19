@@ -10,6 +10,9 @@ from .forms import CouponApplyForm
 def coupon_apply(request):
     now = timezone.now()
     form = CouponApplyForm(request.POST)
+    print(form)
+    code = form.cleaned_data['code']
+    print(code)
     if form.is_valid():
         code = form.cleaned_data['code']
         try:

@@ -12,7 +12,7 @@ class Coupon(models.Model):
                 help_text='Percentage value (0 to 100)')
 
     active = models.BooleanField()
-    is_used = models.BooleanField()
+    is_used = models.BooleanField(default=False)
     def __str__(self):
 
         return self.code

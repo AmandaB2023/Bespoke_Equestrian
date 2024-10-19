@@ -1,12 +1,17 @@
 from django.shortcuts import render, redirect, reverse, HttpResponse, get_object_or_404
 from django.contrib import messages
 from products.models import Product
+from coupons.forms import CouponApplyForm
 
 
 def view_bag(request):
     """ A view that renders the bag contents page """
+    coupon_apply_form = CouponApplyForm()
 
-    return render(request, 'bag/bag.html')
+    context = {
+        'coupon_apply_form': coupon_apply_form,
+    }
+    return render(request, 'bag/bag.html', context)
 
 
 

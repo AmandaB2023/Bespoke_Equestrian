@@ -136,9 +136,6 @@ else:
     }
 }
 
-# DATABASES = {
-#     'default': dj_database_url.parse('')
-# }
 
 CSRF_TRUSTED_ORIGINS = [
     "https://*.gitpod.io",
