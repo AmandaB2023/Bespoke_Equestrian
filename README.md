@@ -157,6 +157,8 @@ In order to make a local copy of this project, you can clone it. In your IDE Ter
 1.   Sign in to GitHub, locate the repository and click to open the repository.
 2.   On the repository main page, click the green code button where the files are located. 
 3.   This will open a drop down menu.
+
+![Github Repo](documentation/github.jpg)
 4.   In the dropdown menu stay on the HTTPS option and click the copy icon button next to the URL to copy it.
 5.   Next open Git Bash and type git clone and your directory link.#
 6.  Then type cd and the directory name.
@@ -167,9 +169,12 @@ In order to make a local copy of this project, you can clone it. In your IDE Ter
 To deploy the repository:
 1.   Log into or sign up for a Heroku account.
 2.   Navigate to the dashboard.
-3.   Navigate to "New" in the top right, select "Create New App" from dropdown menu.
+3.   Navigate to "New" in the top right, select "Create New App" from dropdown menu
 4.   Enter a unique name for the app. 
 5.   Select your region.
+
+![Heroku](documentation/heroku.jpg)
+
 6.   Click  "Create App".
 7.   Navigate to "Deploy"  scroll down to "Deploy Method" and connect the repository with GitHub.
 8.   Navigate to "Settings".
@@ -185,11 +190,17 @@ To deploy the repository:
     - EMAIL_HOST_USER with the value of the email address.
 11. Navigate to section "Deploy" on the top navigation menu.
 12. Select "GitHub" as the deployment method.
+
+![Heroku](documentation/heroku_github.jpg)
+
 13. Search for the repository to be deployed by using the search bar and click "Connect".
 14. Select the repository branch to be deployed.
 15. Choose "Manual" deployment.
     - Manual deployment must be manually re-deployed after pushing new changes to the repository.
     - Crucial when working with DEBUG=True during development.
+
+![Heroku](documentation/heroku_deploy.jpg)
+
 16.  Click the button "View" to open the link to the deployed project.
 
 ### Payment Setup - Stripe

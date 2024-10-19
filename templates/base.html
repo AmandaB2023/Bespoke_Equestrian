@@ -162,12 +162,6 @@
   <main class="d-flex ">
 
     {% block content %}
-    <section id="hero">
-      <div id="cover-text">
-        <h1>Lackyle Sporthorses</h1>
-        <h2>Galway, Ireland</h2>
-      </div>
-    </section>
     {% endblock %}
   </main>
 
@@ -177,112 +171,8 @@
     $('.toast').toast('show');
   </script>
   {% endblock %}
+  {% include 'includes/footer.html' %}
 
-  <!--Footer-->
-  <footer class="d-flex justify-content-between">
-    <div class="d-inline p-2">
-      <h3>div 1</h3>
-    </div>
-    <div>
-
-      <!--Social Media Links-->
-      <ul id="social-networks">
-        <li class="facebook">
-          <!--This will open our facebook page in a new window-->
-          <a href="https://www.facebook.com/" target="_blank" rel="noopener"
-            aria-label="Check out our Facebook page (opens lackyle sporthorses facebook page  in a new tab)">
-            <i class="fa-brands fa-facebook"></i>
-          </a>
-        </li>
-        <li class="twitter">
-          <!--This will open our Twitter/X page in a new window-->
-          <a href="https://www.twitter.com/" target="_blank" rel="noopener"
-            aria-label="Visit our Twitter page (opens  lackyle sporthorses twitter page  in a new tab)">
-            <i class="fa-brands fa-x-twitter"></i>
-          </a>
-        </li>
-        <li class="youtube">
-          <!--This will open our YouTube channel in a new window-->
-          <a href="https://www.youtube.com/" target="_blank" rel="noopener"
-            aria-label="Visit our YouTube page (opens lackyle sporthores youtube channel in a new tab)">
-            <i class="fa-brands fa-youtube"></i>
-          </a>
-        </li>
-        <li class="instagram">
-          <!--This will open our Instagram page in a new window-->
-          <a href="https://www.instagram.com/" target="_blank" rel="noopener"
-            aria-label="Come follow us on our Instagram page (opens lackyle sporthorses instagram page in a new tab)">
-            <i class="fa-brands fa-instagram"></i>
-          </a>
-        </li>
-      </ul>
-    </div>
-    <div>
-      <div class="d-inline p-2" id="mc_embed_shell">
-        <div id="mc_embed_signup">
-          <form
-            action="https://ymail.us10.list-manage.com/subscribe/post?u=00dbe12bb8182214e556f6418&amp;id=7cb1717f85&amp;f_id=00e942e5f0"
-            method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate"
-            target="_blank">
-            <div id="mc_embed_signup_scroll">
-              <h2>Subscribe</h2>
-              <div class="indicates-required"><span class="asterisk">*</span> indicates required</div>
-              <div class="mc-field-group"><label for="mce-EMAIL">Email Address <span
-                    class="asterisk">*</span></label><input type="email" name="EMAIL" class="required email"
-                  id="mce-EMAIL" required="" value=""></div>
-              <div id="mce-responses" class="clear foot">
-                <div class="response" id="mce-error-response" style="display: none;"></div>
-                <div class="response" id="mce-success-response" style="display: none;"></div>
-              </div>
-              <div aria-hidden="true" style="position: absolute; left: -5000px;">
-                /* real people should not fill this in and expect good things - do not remove this or risk form bot
-                signups */
-                <input type="text" name="b_00dbe12bb8182214e556f6418_7cb1717f85" tabindex="-1" value="">
-              </div>
-              <div class="optionalParent">
-                <div class="clear foot">
-                  <input type="submit" name="subscribe" id="mc-embedded-subscribe" class="button" value="Subscribe">
-                  <p style="margin: 0px auto;"><a href="http://eepurl.com/i0jDgc"
-                      title="Mailchimp - email marketing made easy and fun"><span
-                        style="display: inline-block; background-color: transparent; border-radius: 4px;"><img
-                          class="refferal_badge"
-                          src="https://digitalasset.intuit.com/render/content/dam/intuit/mc-fe/en_us/images/intuit-mc-rewards-text-dark.svg"
-                          alt="Intuit Mailchimp"
-                          style="width: 200px; height: 30px; display: flex; padding: 2px 0px; justify-content: center; align-items: center;"></span></a>
-                  </p>
-                </div>
-              </div>
-            </div>
-          </form>
-        </div>
-
-      </div>
-
-    </div>
-  </footer>
-  <!--Mailchimp-->
-  <script type="text/javascript" src="//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js"></script>
-  <script type="text/javascript">
-    (function ($) {
-      window.fnames = new Array();
-      window.ftypes = new Array();
-      fnames[0] = 'EMAIL';
-      ftypes[0] = 'email';
-      fnames[1] = 'FNAME';
-      ftypes[1] = 'text';
-      fnames[2] = 'LNAME';
-      ftypes[2] = 'text';
-      fnames[3] = 'ADDRESS';
-      ftypes[3] = 'address';
-      fnames[4] = 'PHONE';
-      ftypes[4] = 'phone';
-      fnames[5] = 'BIRTHDAY';
-      ftypes[5] = 'birthday';
-      fnames[6] = 'COMPANY';
-      ftypes[6] = 'text';
-    }(jQuery));
-    var $mcj = jQuery.noConflict(true);
-  </script>
 </body>
 
 </html>
