@@ -15,6 +15,8 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 
 # SECURITY WARNING: keep the secret key used in production secret!
 # secret key
+CLOUDINARY_URL = os.environ.get("CLOUDINARY_URL")
+
 SECRET_KEY = os.environ.get("SECRET_KEY")
 
 DEBUG = True
@@ -42,7 +44,6 @@ INSTALLED_APPS = [
     'bag',
     'checkout',
     'contact',
-    'coupons',
     'home',
     'products',
     'profiles',

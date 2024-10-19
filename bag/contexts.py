@@ -2,7 +2,7 @@ from decimal import Decimal
 from django.conf import settings
 from django.shortcuts import get_object_or_404
 from products.models import Product
-from coupons.models import Coupon
+
 
 def bag_contents(request):
 
@@ -10,9 +10,9 @@ def bag_contents(request):
     total = 0
     product_count = 0
     bag = request.session.get('bag', {})
-    coupon_id = request.session.get('coupon_id')
+   
 
-    coupon = None
+    
     discount = 0
     savings = 0
 
@@ -39,20 +39,6 @@ def bag_contents(request):
                     'size': size,
                 })
 
-        if coupon_id:
-            try:
-                coupon = Coupon.objects.get(id=coupon_id)
-                if coupon.is_valid():
-                    if coupon.discount_type == 'percentage':
-                        discount = (
-                            coupon.discount_value / Decimal(100)) * subtotal
-                elif coupon.discount_type == 'amount':
-                    discount = coupon.discount_value
-                    savings = min(discount, subtotal)
-                else:
-                    request.session['coupon_id'] = None
-            except Coupon.DoesNotExist:
-                request.session['coupon_id'] = None
 
     grand_total = total - savings
 
@@ -74,8 +60,7 @@ def bag_contents(request):
         'free_delivery_delta': free_delivery_delta,
         'free_delivery_threshold': settings.FREE_DELIVERY_THRESHOLD,
         'grand_total': grand_total,
-        'coupon': coupon,
-        'savings': savings,
+        
     }
 
     return context
