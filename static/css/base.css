@@ -33,18 +33,12 @@ footer {
     padding: 25px;
 }
 
-
-
 #contact {
     display: flex;
     align-items: center;
     justify-content: center;
-    max-height: fit-content;
-    width: auto;
-    font-size: 1.2rem;
-    font-weight: 500;
-    margin: 20px 0 10px -10px;
 }
+
 
 /*Footer Social Media Icons*/
 /*Targets Social media icons*/
