@@ -3,6 +3,13 @@
 ## Compatability
 
 ## Responsiveness
+The website was checked manually using Devtools on both Microsoft Edge and Google Chrome.
+
+The website was also checked using the responsive viewer extention on google chrome which shows the website on various different screen sizes.
+
+[Responsive-Image](documentation/be_responsive.jpg)
+
+[Responsive-Image](documentation/be_responsive2.jpg)
 
 ## Manual Testing
 
@@ -43,6 +50,7 @@
 | Checkout  |User clicks on the secure checkout  |User is brought to the checkout page | 
 |  |User is asked to enter their delivery details  | If incorrect will recieve notification | Yes | Yes | - |
 |  | User is asked to enter their card details  |  | Yes | Yes | - |
+|  | If Correct | User is brought to order conformation page  | Yes | Yes | - |
 ## Validation Testing
 
 ### HTML
@@ -53,9 +61,64 @@ All HTML was validated using  [HTML W3C Validator](https://validator.w3.org)
 
 All Css was validated using [W3C Jigsaw](https://jigsaw.w3.org/css-validator/)
 ### Javascript
+| File Name             | Pass | View Result                                                              | Notes                                                                                                                                                                                            |
+| --------------------- | ---- | ------------------------------------------------------------------------ | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| Home       |   |   |  
+| base.css          | ✅    | [Result](documentation/css_valadation_be.jpg)      |  
+  
 
+### Python 
 The javascrip for this project was validated using [Jshint](https://jshint.com/)
 
+| File Name             | Pass | View Result                                                              | Notes                                                                                                                                                                                            |
+| --------------------- | ---- | ------------------------------------------------------------------------ | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| Home       |   |   |  
+| checkout.js          | ✅    | [Result](documentation/checkout_js.jpg)      |  
+| profiles.js            | ✅    | [Result](documentation/profiles_js.jpg)      |  
 ### Python 
 
 The Python files for this project were validated using  [PEP8 CI Online](https://pep8ci.herokuapp.com/)
+
+| File Name             | Pass | View Result                                                              | Notes                                                                                                                                                                                            |
+| --------------------- | ---- | ------------------------------------------------------------------------ | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| Home       |   |   |  
+| views.py            | ✅    | [Result](documentation/home_views.jpg)      |         
+| urls.py          | ✅    | [Result](documentation/home_urls.jpg)      |  
+| models.py          | ✅    | [Result](documentation/home_models.jpg)  
+| Bespoke Equestrian     |   |   |  
+| views.py            | ✅    | [Result](documentation/be_views.jpg)      |         
+| urls.py          | ✅    | [Result](documentation/bag_urls.jpg)      |  
+| settings.py          | ✅    | [Result](documentation/be_setting.jpg)  
+| Products      |   |   |  
+| views.py            | ✅    | [Result](documentation/)      |         
+| urls.py          | ✅    | [Result](documentation/home_urls.jpg)      |  
+| models.py          | ✅    | [Result](documentation/home_models.jpg)  
+| forms.py          | ✅    | [Result](documentation/h) 
+| admin.py          | ✅    | [Result](documentation/h) 
+| Bag     |   |   |  
+| views.py            | ✅    | [Result](documentation/bag_views.jpg)      |         
+| urls.py          | ✅    | [Result](documentation/bag_urls.jpg)      |  
+| models.py          | ✅    | [Result](documentation/)  
+| contexts.py        | ✅    | [Result](documentation/bag_contects.jpg) 
+| Checkout     |   |   |  
+| views.py            | ✅    | [Result](documentation/checkout_views.jpg)      |         
+| urls.py          | ✅    | [Result](documentation/checkout_urls.jpg)      |  
+| models.py          | ✅    | [Result](documentation/checkout.models.jpgmodels.jpg)  
+| forms.py          | ✅    | [Result](documentation/checkout_forms.jpg) 
+| admin.py          | ✅    | [Result](documentation/checkout_admin.jpg) 
+| webhooks.py          | ✅    | [Result](documentation/checkout_webhooks.jpg) 
+| webhooks_handler.py          | ✅    | [Result](documentation/checkout_webhooks_handler.jpg) 
+| signals.py          | ✅    | [Result](documentation/checkout_signals.jpg)
+| Profiles    |   |   |  
+| views.py            | ✅    | [Result](documentation/profiles+views.jpg)      |         
+| urls.py          | ✅    | [Result](documentation/profile_url.jpg)      |  
+| models.py          | ✅    | [Result](documentation/profile_models.jpg)  
+| forms.py          | ✅    | [Result](documentation/profile_forms.jpg )
+| About   |   |   |  
+| views.py            | ✅    | [Result](documentation/about_views.jpg)      |         
+| urls.py          | ✅    | [Result](documentation/about_urls.jpg)      |  
+| models.py          | ✅    | [Result](documentation/about_models.jpg)  
+
+## Bugs
+
+## Unsolved Bugs

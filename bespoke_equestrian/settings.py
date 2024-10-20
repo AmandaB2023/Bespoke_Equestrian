@@ -1,6 +1,7 @@
 
 import os
 import dj_database_url
+import sys
 
 from pathlib import Path
 if os.path.isfile('env.py'):
@@ -139,12 +140,7 @@ else:
     }
 }
 
-# DATABASES = {
-#     'default': {
-#         'ENGINE': 'django.db.backends.sqlite3',
-#         'NAME': BASE_DIR / 'db.sqlite3',
-#     }
-# }
+
 
 CSRF_TRUSTED_ORIGINS = [
     "https://*.gitpod.io",

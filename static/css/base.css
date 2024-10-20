@@ -5,7 +5,6 @@ html {
 body {
     background: url('/media/hero2.webp') no-repeat center center fixed;
     background-size: cover;
-    color: #555;
     font-family: 'Lato';
 
 }
@@ -355,8 +354,6 @@ a.category-badge>span.badge:hover {
     }
 
     body {
-
-        background: url('/media/Hero_Mob_1-min.webp')no repeat;
         max-width: 100%;
         height: auto;
     }
