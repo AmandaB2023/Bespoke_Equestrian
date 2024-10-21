@@ -1,0 +1,28 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block page_header %}
+<div class="container header-container">
+    <div class="row">
+        <div class="col"></div>
+    </div>
+</div>
+{% endblock %}
+{% block content %}
+
+<div class="container grid text-center">
+    <div class="row">
+        <div class=" col-md-8 col-md-10 mx-auto">
+        </div>
+        <div class="center" id="poll">
+            <!-- Title goes between these h2 tags -->
+            <h2>Poll</h2>
+            <h1>{{ question.question_text }}</h1>
+
+            <ul>
+                {% for choice in question.choice_set.all %}
+                <li>{{ choice.choice_text }} -- {{ choice.votes }} vote{{ choice.votes|pluralize }}</li>
+                {% endfor %}
+            </ul>
+
+            <a href="{% url 'poll:detail' question.id %} ">Vote again?</a>
+            {% endblock content %}
