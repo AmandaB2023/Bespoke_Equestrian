@@ -1,15 +1,19 @@
 # Bespoke Equestrian - Testing
 
-## Compatability
+## Lighthouse
+
+I undertook lighthouse testing an fell down slightly on best practices, this was mainly due to using jquery, bootstraps and stripe.
+
+![Lighhouse](documentation/be_lighhouse.jpg)
 
 ## Responsiveness
 The website was checked manually using Devtools on both Microsoft Edge and Google Chrome.
 
 The website was also checked using the responsive viewer extention on google chrome which shows the website on various different screen sizes.
 
-[Responsive-Image](documentation/be_responsive.jpg)
+![Responsive-Image](documentation/be_responsive.jpg)
 
-[Responsive-Image](documentation/be_responsive2.jpg)
+![Responsive-Image](documentation/be_responsive2.jpg)
 
 ## Manual Testing
 
@@ -51,6 +55,8 @@ The website was also checked using the responsive viewer extention on google chr
 |  |User is asked to enter their delivery details  | If incorrect will recieve notification | Yes | Yes | - |
 |  | User is asked to enter their card details  |  | Yes | Yes | - |
 |  | If Correct | User is brought to order conformation page  | Yes | Yes | - |
+
+
 ## Validation Testing
 
 ### HTML
@@ -121,4 +127,5 @@ The Python files for this project were validated using  [PEP8 CI Online](https:/
 
 ## Bugs
 
-## Unsolved Bugs
+*   I have a bug on my home page I that the shop now button is not displaying as I would like.
+*   I also have abook on my basket widjets where they have to be clicked to be removed and should be set to time out.

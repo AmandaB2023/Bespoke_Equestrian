@@ -1,12 +1,13 @@
 # Bespoke Equestrian
 
-**Deployed  Website: [Link to website]()
+Deployed  Website: [Bespoke Equestrian](https://project5-bespoke-equestrian-59c3e2f118b9.herokuapp.com/)
 
 ## About
 
 Bespoke Equestrian is an Irish based online equine retailer who speclaises in bespoke / custom equestrian products. It offers a service where customer can purchse items and get them made in their own distinct colors , or purchase off the rack products and have them customised with there own logo or branding. This service enables all yards and stables to full customise there look and remain on brand at all times , while competing or working at home.
 
 ## User Experience
+
 ### Target Audience
 
 The website is intended to be used by primary the equine industy ,however it can be used by anyone who wishes to purchse our products and have them cusromosed to suit there needs. 
@@ -24,11 +25,13 @@ The website is intended to be used by primary the equine industy ,however it can
 *   I can add the desired quantity of an item to my shopping bag.
 *   I can view and update my shopping bag. 
 *   I can securely purchase the items by giving my delivery details and card information.
+
 #### Returning User Goals
 As a returning customer:
 *   I want to be able to be able to have access to my account without having to continously login.
 *   I want to be able to view my previous orders.
 *   I want to be able to edit and update my address details.
+
 #### Site Owner/Admin Goals
 
 As a Admin:
@@ -37,6 +40,7 @@ As a Admin:
 *   i want to be able to edit and update products.
 *   I want to be able to delete products.
 *   I want to be able to send emails to customers about discounts and new producst.
+*   I want to be able to get uers to sign up to my newsletter.
 
 
 ## Features
@@ -46,15 +50,43 @@ As a Admin:
 The customer can read a detailed about us page to find out more about our business and the services and/or products that we offer.
 
 ### Contact
+The header and footer are the same as the homepage.
+
+The contact page then has a background image with a form overlay that the user can fill in to contact Bespoke Equestrain.
+All text input fields are customized
+Labels are animated when the input field is in focus and are not empty.
+The page is responsive on all common screen sizes.
+The submit button leads to the response page.​
 
 ### Shopping Bag
+The user can place products in their shopping cart and is notified of the items added to bag. The success message disappears after it is clicked,if the cart ocon is clicked it will show a preview. 
 
 ### Custom Error Pages
 The project a custom HTML error page for status codes 403 (Forbidden), 404 (Not Found) and 500 (Internal Server Error) for improved user experience. This maintains a consistent design across the site.
+
 ## Design
+
+![Bespoke-Equestrian](documentation/be.jpg)
+
+![Bespoke-Equestrian](documentation/be_products.jpg)
+
 ### Color Scheme
+
+The colour scheme was kept simple to keep it clean and elegant , easy for the user to look at and navigate.I used most;y grey and a grey blue footer and acent points ontop of a white backround , while using black for borders, padding and buttons.
+
+![colors](documentation/be_colors.jpg)
+
 ### Typography
+
+Again it was kept sinple using Lato from google fonts for most of the text and the then Playfair Display for the logo and some headers throughout the site.
+
+![fonts](documentation/be_lato.jpg)
+
+![fonts](documentation/be_playfair.JPG)
+
 ### Imagery
+
+All imagery on my site was taken from [Equiport](www.equiport.com) as this site has the type of design I was looking to impulate for my own site.
 
 ## Ecommerce Business Model
 
@@ -64,6 +96,7 @@ The business model for this ecommerce website is a Business to Customer (B2C) mo
 The main aim for Bespoke Equestrian is to generate brand awareness and establish a reputation for providing quality equestrian wear which in turn will hopefully increase sales if they can fulfil the customer’s requirement.
 
 ## Marketing Strategies
+
 ### Digital Media Needs
 In order to meet the digital media needs of Bespoke Stables they intend to utilise a number of e-marketing tools, such as social media, search engine optimisation, email marketing and online advertising. 
 
@@ -80,6 +113,8 @@ In order to meet the digital media needs of Bespoke Stables they intend to utili
 *   Large Audiences - Facebook has 1.13 billion users, Twitter has 313 million monthly active users, Instagram has 500 million, and Pinterest has about 110 million.
 *   Free to create - One of the biggest advantages of social media marketing is that it is entirely free to businesses.
 *   Encourage sharing - People love to share things with their networks, from photos and recipes to interesting articles and hot deals.
+
+![Facebook-page](documentation/be_facebook.jpg)
 
 #### Email Marketing
 Email Marketing allows you to send newsletters and announcements to subscribers by the mass.
@@ -105,10 +140,51 @@ Search Engine Optimisation is an important part of Digital Marketing as it allow
 *   Targeted Traffic – The traffic you receive to your website from a search engine is made up of users who searched for applicable search terms related to your business. This is much more productive than meaningless hits that will not turn into sale
 
 ## Wireframes
+The wireframes for the website were designed in Cvnva. The designs vary from the end layout in some places due to creative decisions made throughout the development process.
+
+*   Home
+
+![Wireframe_home](documentation/wireframe_home.jpg)
+
+*   Products Page
+
+![Wireframe_products-page](documentation/wireframe_products_page.jpg)
+
+*   Products Description
+
+![Wireframe_description](documentation/wireframe_product_view.jpg)
+
+
+*   Bag
+
+![Wireframe_home](documentation/wireframe_bag.jpg)
+
+
+*   Checkout
+
+![Wireframe_checkout](documentation/wireframe_checkout.jpg)
+
+*   Order
+
+![Wireframe_home](documentation/wireframe_order.jpg)
 
 ## Agile Methodology 
 
+Agile methodology is a project management approach that focuses on  working toward a clear objective. It is especially effective in software development, where requirements  evolve.  Agile methodologies strive to deliver small, incremental product updates that enhance quality and allow for quick adaptation to changing needs.
+
+
+The MoSCoW prioritization technique is a framework let you set priorities for different tasks within a project. It classifies items into four categories: Must Have, Should Have, Could Have, and Won't Have. This approach helps with time management by ensuring that the most essential features are prioritized and completed first.
+
+
+GitHub Projects provides a way to manage tasks and monitor progress using project boards. Each board represents an EPIC, with columns that track the status of tasks, such as To Do, In Progress, On Hold, Done, and Bugs. Tasks are organized with labels indicating the user, priority, and sprint.
+
+![github-projects](documentation/github_projects.jpg)
+
+![user-story_tasks](documentation/user_story.jpg)
+
+
 ## Technologies Used
+
 The following technologies were used to complete this project.
 
 ### Languages:
@@ -227,7 +303,21 @@ To deploy the repository:
     *   Add to env.py
  8. Add the link to [stripe's JavaScript](https://docs.stripe.com/js) in your base html template.
 
+## Future Improvements
+
+*   Create redirections on product managment page.
+
+*   Add pop up on delete button on producst so that it asks are you sure you want to delete.
 
 ## Credits
+*   Stripe Official documentation for code snippets 
+*   Django framework official documentation
+*   The Code Institute walkthrough project Boutique Ado for inspiration for the basic website structure.
+*   [Equiport](www.equiport.com) for the images used on the site and inspiration for the content.
+
 
 ## Acknowledgements
+
+First and foremost my mentor Juliia Konovalova for all her advice and guidance on this project and all prvious projects. She has been a great help thouout this course and desrves a huge about of credit for the effort she puts in.
+
+Code Institute tutors and Slack community members for their support and help.

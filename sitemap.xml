@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset
+      xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
+            http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+<!-- created with Free Online Sitemap Generator www.xml-sitemaps.com -->
+
+
+<url>
+  <loc>https://project5-bespoke-equestrian-59c3e2f118b9.herokuapp.com/</loc>
+  <lastmod>2024-10-21T00:49:44+00:00</lastmod>
+  <priority>1.00</priority>
+</url>
+<url>
+  <loc>https://project5-bespoke-equestrian-59c3e2f118b9.herokuapp.com/accounts/signup/</loc>
+  <lastmod>2024-10-21T00:49:44+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://project5-bespoke-equestrian-59c3e2f118b9.herokuapp.com/accounts/login/</loc>
+  <lastmod>2024-10-21T00:49:44+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://project5-bespoke-equestrian-59c3e2f118b9.herokuapp.com/bag/</loc>
+  <lastmod>2024-10-21T00:49:44+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://project5-bespoke-equestrian-59c3e2f118b9.herokuapp.com/products/?sort=price&amp;direction=asc</loc>
+  <lastmod>2024-10-21T00:49:44+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://project5-bespoke-equestrian-59c3e2f118b9.herokuapp.com/products/?sort=rating&amp;direction=desc</loc>
+  <lastmod>2024-10-21T00:49:44+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://project5-bespoke-equestrian-59c3e2f118b9.herokuapp.com/products/?sort=category&amp;direction=asc</loc>
+  <lastmod>2024-10-21T00:49:44+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://project5-bespoke-equestrian-59c3e2f118b9.herokuapp.com/products/</loc>
+  <lastmod>2024-10-21T00:49:44+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://project5-bespoke-equestrian-59c3e2f118b9.herokuapp.com/products/?category=saddle_pads</loc>
+  <lastmod>2024-10-21T00:49:44+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://project5-bespoke-equestrian-59c3e2f118b9.herokuapp.com/products/?category=stable_apparel</loc>
+  <lastmod>2024-10-21T00:49:44+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://project5-bespoke-equestrian-59c3e2f118b9.herokuapp.com/products/?category=rugs</loc>
+  <lastmod>2024-10-21T00:49:44+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://project5-bespoke-equestrian-59c3e2f118b9.herokuapp.com/products/?category=stable_apparel,%20saddle_pads,%20rugs</loc>
+  <lastmod>2024-10-21T00:49:44+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://project5-bespoke-equestrian-59c3e2f118b9.herokuapp.com/products/?category=jackets</loc>
+  <lastmod>2024-10-21T00:49:44+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://project5-bespoke-equestrian-59c3e2f118b9.herokuapp.com/products/?category=helmets</loc>
+  <lastmod>2024-10-21T00:49:44+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://project5-bespoke-equestrian-59c3e2f118b9.herokuapp.com/products/?category=jackets,%20helmets</loc>
+  <lastmod>2024-10-21T00:49:44+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://project5-bespoke-equestrian-59c3e2f118b9.herokuapp.com/about/</loc>
+  <lastmod>2024-10-21T00:49:44+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://project5-bespoke-equestrian-59c3e2f118b9.herokuapp.com/contact/contact/</loc>
+  <lastmod>2024-10-21T00:49:44+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://project5-bespoke-equestrian-59c3e2f118b9.herokuapp.com/accounts/password/reset/</loc>
+  <lastmod>2024-10-21T00:49:44+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://project5-bespoke-equestrian-59c3e2f118b9.herokuapp.com/products/8/</loc>
+  <lastmod>2024-10-21T00:49:44+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://project5-bespoke-equestrian-59c3e2f118b9.herokuapp.com/products/6/</loc>
+  <lastmod>2024-10-21T00:49:44+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://project5-bespoke-equestrian-59c3e2f118b9.herokuapp.com/products/2/</loc>
+  <lastmod>2024-10-21T00:49:44+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://project5-bespoke-equestrian-59c3e2f118b9.herokuapp.com/products/3/</loc>
+  <lastmod>2024-10-21T00:49:44+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://project5-bespoke-equestrian-59c3e2f118b9.herokuapp.com/products/9/</loc>
+  <lastmod>2024-10-21T00:49:44+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://project5-bespoke-equestrian-59c3e2f118b9.herokuapp.com/products/4/</loc>
+  <lastmod>2024-10-21T00:49:44+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://project5-bespoke-equestrian-59c3e2f118b9.herokuapp.com/products/7/</loc>
+  <lastmod>2024-10-21T00:49:44+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+
+
+</urlset>
