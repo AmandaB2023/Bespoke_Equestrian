@@ -6,15 +6,8 @@ body {
     background: url('/media/hero2.webp') no-repeat center center fixed;
     background-size: cover;
     font-family: 'Lato';
-
-}
-
-main {
-
-    background-color: transparent;
-    /* Enlarged main element to push footer down*/
-    flex: 1 0 auto;
-    min-height: 100vh;
+    height: calc(100vh - 164px);
+    color: #555;
 }
 
 
@@ -22,22 +15,19 @@ footer {
     background-color: #4D6A6D;
     display: flex;
     flex-wrap: wrap;
+    color: #ffffff;
 }
 
 
 /*Contact form text and backround color*/
 #about,
 #contact,
-#question,
 #success {
     color: #ffffff;
     background-color: rgba(77, 106, 109, 0.9);
     padding: 25px;
 }
 
-#poll {
-    background-color: rgba(77, 106, 109, 0.9);
-}
 
 #contact {
     display: flex;
