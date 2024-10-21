@@ -13,14 +13,12 @@
     <div class="row">
         <div class=" col-md-8 col-md-10 mx-auto">
         </div>
-        <div class="center" id="poll">
+        <div class="center" id="about">
             <!-- Title goes between these h2 tags -->
             <h2>Poll</h2>
             <!-- Content goes directly underneath this -->
-            <h1>{{ question.question_text }}</h1>
-
+            <h2>{{ question.question_text }}</h2>
             {% if error_message %}<p><strong>{{ error_message }}</strong></p>{% endif %}
-
             <form action="{% url 'poll:vote' question.id %}" method="post">
                 {% csrf_token %}
                 {% for choice in question.choice_set.all %}

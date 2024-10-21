@@ -214,7 +214,7 @@ The following technologies were used to complete this project.
 
 ## Testing 
 
-Please refer to the [Testing](Testing.md) file  for all testing related documentation.
+Please refer to the [Testing](TESTING.md) file  for all testing related documentation.
 
 ## Deployment
 
