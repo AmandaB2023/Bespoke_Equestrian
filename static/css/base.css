@@ -154,6 +154,11 @@ a.category-badge>span.badge:hover {
     cursor: pointer;
 }
 
+.btn-primary {
+    background-color: #9b9c9c;
+
+}
+
 /* ------------------------------- bootstrap toasts */
 
 .message-container {

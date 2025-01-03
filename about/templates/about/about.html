@@ -15,7 +15,8 @@
         </div>
         <div class="center" id="about">
             <!-- Title goes between these h2 tags -->
-            <h2>{{ about.title }}</h2>
+            <h2>About</h2>
+            <hr>
             {% if "placeholder" in about.profile_image.url %}
             <img src="{% static 'media/hero1.webp' %}" width="25%" alt="placeholder image">
             {% else %}
