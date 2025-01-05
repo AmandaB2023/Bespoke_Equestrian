@@ -1,9 +1,6 @@
 Hello {{ order.full_name }}!
 
-Thank You for your orderdering from Bespoke Equestrian
-This is a confirmation that yournorder has been recieved and will be processsed as soon as possible.
-
-Please find details of your order  below:
+This is a confirmation of your order at Bespoke Equestrian. Your order information is below:
 
 Order Number: {{ order.order_number }}
 Order Date: {{ order.date }}
@@ -18,6 +15,7 @@ We've got your phone number on file as {{ order.phone_number }}.
 
 If you have any questions, feel free to contact us at {{ contact_email }}.
 
+Thank you for your order!
 
 Sincerely,
 

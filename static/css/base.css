@@ -28,7 +28,8 @@ footer {
 /*Contact form text and backround color*/
 #about,
 #contact,
-#success {
+#success,
+#poll {
     color: #ffffff;
     background-color: rgba(77, 106, 109, 0.9);
     padding: 25px;
