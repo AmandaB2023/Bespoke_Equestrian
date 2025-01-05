@@ -19,10 +19,10 @@ def contact_view(request):
             form.save()
             send_mail(
                 form.cleaned_data['subject'],  # subject
-                f" ou have recieved a Message from {form.cleaned_data['name']} <{form.cleaned_data['email']}>\n\n"
+                f" You have recieved a Message from {form.cleaned_data['name']} <{form.cleaned_data['email']}>\n\n"
                 f"{form.cleaned_data['message']}",  # message
                 None,  # from email
-                ['admin_email'],  # replace with your email
+                ['amandafahy@ymail.com'],  # replace with your email
             )
         return render(request, 'contact/success.html')
     form = ContactForm()
