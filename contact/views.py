@@ -17,6 +17,7 @@ def contact_view(request):
         form = ContactForm(request.POST)
         if form.is_valid():
             form.save()
+            # Send email to admin to notify of contact submission
             send_mail(
                 form.cleaned_data['subject'],  # subject
                 f" You have recieved a Message from {form.cleaned_data['name']} <{form.cleaned_data['email']}>\n\n"
