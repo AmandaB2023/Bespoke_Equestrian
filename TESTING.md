@@ -4,16 +4,16 @@
 
 I undertook lighthouse testing an fell down slightly on best practices, this was mainly due to using jquery, bootstraps and stripe.
 
-![Lighhouse](documentation/be_lighhouse.jpg)
+![Lighhouse](documentation/bespoke_lighthouse.jpg)
 
 ## Responsiveness
 The website was checked manually using Devtools on both Microsoft Edge and Google Chrome.
 
 The website was also checked using the responsive viewer extention on google chrome which shows the website on various different screen sizes.
 
-![Responsive-Image](documentation/be_responsive.jpg)
+![Responsive-Image](documentation/bespoke_r1.jpg)
 
-![Responsive-Image](documentation/be_responsive2.jpg)
+![Responsive-Image](documentation/bespoke_r2.JPG)
 
 ## Manual Testing
 
@@ -64,14 +64,10 @@ The website was also checked using the responsive viewer extention on google chr
 All HTML was validated using  [HTML W3C Validator](https://validator.w3.org)
 
 ### CSS
-
-All Css was validated using [W3C Jigsaw](https://jigsaw.w3.org/css-validator/)
-### Javascript
 | File Name             | Pass | View Result                                                              | Notes                                                                                                                                                                                            |
 | --------------------- | ---- | ------------------------------------------------------------------------ | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
 | Home       |   |   |  
-| base.css          | ✅    | [Result](documentation/css_valadation_be.jpg)      |  
-  
+| base.css          | ✅    | [Result](documentation/css_bespoke.jpg)      |  
 
 ### Python 
 The javascrip for this project was validated using [Jshint](https://jshint.com/)
@@ -132,5 +128,6 @@ The Python files for this project were validated using  [PEP8 CI Online](https:/
 
 ## Bugs
 
-*   I have a bug on my home page I that the shop now button is not displaying as I would like.
+*   I have a bug on my delete product I should have an are you sure popup.
 *   I also have abook on my basket widjets where they have to be clicked to be removed and should be set to time out.
+*   My HTML validdation also has errors.
