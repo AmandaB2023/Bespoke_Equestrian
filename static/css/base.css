@@ -35,14 +35,17 @@ h1 {
 /*Contact form text and backround color*/
 #about,
 #contact,
-#success,
-#poll {
+#success {
     color: #ffffff;
     background-color: rgba(77, 106, 109, 0.9);
     padding: 25px;
 }
 
-#poll,
+#poll {
+    color: #ffffff;
+    background-color: rgba(77, 106, 109, 0.9);
+}
+
 #contact {
     display: flex;
     align-items: center;

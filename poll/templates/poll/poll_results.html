@@ -11,19 +11,18 @@
 
 <div class="container grid text-center">
     <div class="row">
-        <div class=" col-md-8 col-md-10 mx-auto">
-        </div>
-        <div class="center" id="poll">
-            <!-- Title goes between these h2 tags -->
-            <h2>Poll</h2>
-            <hr>
-            <h1>{{ question.question_text }}</h1>
+        <div class=" col-md-8 col-md-10 mx-auto" id="poll">
 
-            <ul>
-                {% for choice in question.choice_set.all %}
-                <li>{{ choice.choice_text }} -- {{ choice.votes }} vote{{ choice.votes|pluralize }}</li>
-                {% endfor %}
-            </ul>
+            <div class="mt-3" id="poll">
+                <h2>Thank You for participating !</h2>
+                <h3> We are greatfull for you option.</h3>
+                <ul>
+                    {% for choice in question.choice_set.all %}
+                    <li>{{ choice.choice_text }} -- {{ choice.votes }} vote{{ choice.votes|pluralize }}</li>
+                    {% endfor %}
+                </ul>
 
-            <a href="{% url 'poll:detail' question.id %} ">Vote again?</a>
+
+            </div>
+
             {% endblock content %}

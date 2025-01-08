@@ -10,22 +10,24 @@
 {% block content %}
 
 <div class="container grid text-center">
-    <div class="row">
-        <div class=" col-md-8 col-md-10 mx-auto">
-        </div>
-        <div class="center" id="poll">
-            <!-- Title goes between these h2 tags -->
-            <h2>Poll</h2>
-            <hr>
+    <div class=" col-md-8 col-md-10 mx-auto">
+
+        <div class="mt-3" id="poll">
             <!-- Content goes directly underneath this -->
-            <h2>{{ question.question_text }}</h2>
-            {% if error_message %}<p><strong>{{ error_message }}</strong></p>{% endif %}
-            <form action="{% url 'poll:vote' question.id %}" method="post">
-                {% csrf_token %}
-                {% for choice in question.choice_set.all %}
-                <input type="radio" name="choice" id="choice{{ forloop.counter }}" value="{{ choice.id }}">
-                <label for="choice{{ forloop.counter }}">{{ choice.choice_text }}</label><br>
-                {% endfor %}
-                <input type="submit" value="Vote">
-            </form>
+            <div class="row justify-content-center">
+                <h2>{{ question.question_text }}</h2>
+                <br>
+                {% if error_message %}<p><strong>{{ error_message }}</strong></p>{% endif %}
+            </div>
+            <div class="mt-3" id="poll">
+                <form action="{% url 'poll:vote' question.id %}" method="post">
+                    {% csrf_token %}
+                    {% for choice in question.choice_set.all %}
+                    <input type="radio" name="choice" id="choice{{ forloop.counter }}" value="{{ choice.id }}">
+                    <label for="choice{{ forloop.counter }}">{{ choice.choice_text }}</label><br>
+                    {% endfor %}
+                    <div class="text-end mt-3"><input type="submit" value="Vote">
+                </form>
+            </div>
+
             {% endblock content %}

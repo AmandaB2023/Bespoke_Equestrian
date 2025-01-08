@@ -11,20 +11,11 @@ import os
 
 
 def contact_view(request):
-    admin_email = os.environ.get("EMAIL_ADMIN_ADDRESS")
-
     if request.method == 'POST':
         form = ContactForm(request.POST)
         if form.is_valid():
             form.save()
-            # Send email to admin to notify of contact submission
-            send_mail(
-                form.cleaned_data['subject'],  # subject
-                f" You have recieved a Message from {form.cleaned_data['name']} <{form.cleaned_data['email']}>\n\n"
-                f"{form.cleaned_data['message']}",  # message
-                None,  # from email
-                ['amandafahy@ymail.com'],  # replace with your email
-            )
+            
         return render(request, 'contact/success.html')
     form = ContactForm()
     context = {'form': form}
