@@ -99,21 +99,16 @@ The Python files for this project were validated using  [PEP8 CI Online](https:/
 | views.py            | ✅    | [Result](documentation/)      |         
 | urls.py          | ✅    | [Result](documentation/home_urls.jpg)      |  
 | models.py          | ✅    | [Result](documentation/home_models.jpg)  
-| forms.py          | ✅    | [Result](documentation/h) 
-| admin.py          | ✅    | [Result](documentation/h) 
 | Bag     |   |   |  
 | views.py            | ✅    | [Result](documentation/bag_views.jpg)      |         
 | urls.py          | ✅    | [Result](documentation/bag_urls.jpg)      |  
-| models.py          | ✅    | [Result](documentation/)  
-| contexts.py        | ✅    | [Result](documentation/bag_contects.jpg) 
 | Checkout     |   |   |  
 | views.py            | ✅    | [Result](documentation/checkout_views.jpg)      |         
 | urls.py          | ✅    | [Result](documentation/checkout_urls.jpg)      |  
 | models.py          | ✅    | [Result](documentation/checkout.models.jpgmodels.jpg)  
-| forms.py          | ✅    | [Result](documentation/checkout_forms.jpg) 
-| admin.py          | ✅    | [Result](documentation/checkout_admin.jpg) 
-
-| signals.py          | ✅    | [Result](documentation/checkout_signals.jpg)
+| forms.py          | ✅    | [Result](documentation/checkout_forms.jpg) |
+| admin.py          | ✅    | [Result](documentation/checkout_admin.jpg) |
+| signals.py          | ✅    | [Result](documentation/checkout_signals.jpg)|
 | Profiles    |   |   |  
 | views.py            | ✅    | [Result](documentation/profiles+views.jpg)      |         
 | urls.py          | ✅    | [Result](documentation/profile_url.jpg)      |  
@@ -126,14 +121,14 @@ The Python files for this project were validated using  [PEP8 CI Online](https:/
 | Contact   |   |   |  
 | views.py            | ✅    | [Result](documentation/contact_views.jpg)      |         
 | urls.py          | ✅    | [Result](documentation/contact_urls.jpg)      |  
-| models.py          | ✅    | [Result](documentation//contact_models.jpg)  
-| forms.py          | ✅    | [Result](documentation/contact_forms.jpg) 
-| admin.py          | ✅    | [Result](documentation/contact_admin.jpg) 
+| models.py          | ✅    | [Result](documentation//contact_models.jpg)  |
+| forms.py          | ✅    | [Result](documentation/contact_forms.jpg) |
+| admin.py          | ✅    | [Result](documentation/contact_admin.jpg) |
 | Poll  |   |   |  
 | views.py            | ✅    | [Result](documentation/poll_views.jpg)      |         
 | urls.py          | ✅    | [Result](documentation/poll_urls.jpg)      |  
-| models.py          | ✅    | [Result](documentation/poll_models.jpg)  
-| admin.py          | ✅    | [Result](documentation/poll_admin.jpg) 
+| models.py          | ✅    | [Result](documentation/poll_models.jpg)  |
+| admin.py          | ✅    | [Result](documentation/poll_admin.jpg) |
 
 ## Bugs
 
