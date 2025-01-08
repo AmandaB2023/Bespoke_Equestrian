@@ -20,7 +20,7 @@ CLOUDINARY_URL = os.environ.get("CLOUDINARY_URL")
 
 SECRET_KEY = os.environ.get("SECRET_KEY")
 
-DEBUG = True
+DEBUG = False
 
 ALLOWED_HOSTS = ['8000-amandab2023-bespokeeque-y6do39841th.ws-eu117.gitpod.io', '.herokuapp.com']
 
