@@ -17,7 +17,7 @@ urlpatterns = [
     path('profile/', include('profiles.urls')),
     path('poll/', include('poll.urls')),
     path('summernote/', include('django_summernote.urls')),
-]+ static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
+] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
 
 handler404 = 'bespoke_equestrian.views.handler404'
 handler500 = 'bespoke_equestrian.views.handler500'
